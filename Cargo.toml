@@ -1,16 +1,17 @@
 [package]
-name = "openvr_sys"
+name = "openvr_sys_bindings"
 version = "2.0.3"
 authors = [
     "Colin Sherratt",
     "Erick Tryzelaar",
     "Rene Eichhorn",
-    "Benjamin Saunders"
+    "Benjamin Saunders",
+    "Mawco (https://mar.co.gg)"
 ]
 license = "MIT"
-description = "Raw unsafe system binding for openvr"
-repository = "https://github.com/rust-openvr/rust-openvr-sys"
-keywords = ["vr", "vive", "steamvr"]
+description = "Raw unsafe system binding for openvr (updated fork of https://github.com/rust-openvr/rust-openvr-sys)"
+repository = "https://github.com/Mawco/rust-openvr-sys"
+keywords = ["vr", "vive", "steamvr", "openvr"]
 categories = [ "hardware-support", "external-ffi-bindings" ]
 
 exclude = [
@@ -26,10 +27,10 @@ maintenance = { status = "passively-maintained" }
 
 [build-dependencies]
 cmake = "0.1"
-bindgen = { version = "0.49", optional = true }
+bindgen = { version = "0.69.1", optional = true }
 
 [lib]
-name = "openvr_sys"
+name = "openvr_sys_bindings"
 path = "lib.rs"
 
 [features]
